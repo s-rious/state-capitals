@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div_demo {
+            background-color: rgb(115, 115, 255);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+        #div2_demo {
+            background-color: rgb(255, 110, 110);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+        #capital-text {
+            background-color: white;
+            padding: 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div_demo">
+        <select id="continent" onChange="getCountry()">
+            <option hidden>Select Continent</option>
+            <option value="EU">Europe</option>
+            <option value="Asia">Asia</option>
+            <option value="NA">North America</option>
+            <option value="SA">South America</option>
+            <option value="Africa">Africa</option>
+            <option value="Antartica">Antartica</option>
+            <option value="Oceania">Oceania</option>
+        </select>
+        <select id="country">
+            <option hidden>Select Country</option>
+        </select>
+    </div>
+    <div id="div2_demo">
+        <select id="state" onChange="getCapital()">
+            <option hidden>Select State</option>
+            <option value="AZ">Arizona</option>
+            <option value="CA">California</option>
+            <option value="CO">Colorado</option>
+            <option value="DE">Delaware</option>
+            <option value="NE">Nebraska</option>
+        </select>
+        <p id="capital-text"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
